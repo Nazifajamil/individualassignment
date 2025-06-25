@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Education – Nazifa</title>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f2fdf3;
+      font-family: 'Segoe UI', sans-serif;
+      color: #1b3c2e;
+      margin: 0;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .emoji-leaf {
+      position: absolute;
+      font-size: 24px;
+      opacity: 0.6;
+      animation: floatSpin 10s infinite linear;
+    }
+
+    @keyframes floatSpin {
+      0% {
+        transform: translateY(-100px) translateX(0) rotate(0deg);
+      }
+      100% {
+        transform: translateY(110vh) translateX(20px) rotate(360deg);
+      }
+    }
+
+    .header {
+      background-color: #3fa173;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .home-link {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #1b3c2e;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    nav {
+      background-color: #cfeadc;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #1b3c2e;
+      font-weight: bold;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #2e6b4e;
+    }
+
+    .section {
+      width: 90%;
+      max-width: 850px;
+      margin: 30px auto;
+    }
+
+    .school-box {
+      display: flex;
+      background-color: #e9f7ef;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(31, 72, 55, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .school-box:hover {
+      transform: scale(1.02);
+    }
+
+    .school-img {
+      flex-shrink: 0;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e2f6ea;
+      box-shadow: 0 0 15px #3fa173;
+    }
+
+    .school-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .school-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .school-info h3 {
+      margin: 0;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .school-info a {
+      color: #2e6b4e;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .school-info a:hover {
+      text-decoration: underline;
+    }
+
+    .school-info p {
+      margin: 2px 0;
+    }
+
+    .footer {
+      background-color: #1b3c2e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🌿 Floating Emoji Leaves -->
+<div class="background">
+  <span class="emoji-leaf" style="left: 3%; animation-delay: 0s;">🌿</span>
+  <span class="emoji-leaf" style="left: 15%; animation-delay: 1.2s;">🍃</span>
+  <span class="emoji-leaf" style="left: 28%; animation-delay: 3s;">🌱</span>
+  <span class="emoji-leaf" style="left: 42%; animation-delay: 0.7s;">🍃</span>
+  <span class="emoji-leaf" style="left: 55%; animation-delay: 2.3s;">🌿</span>
+  <span class="emoji-leaf" style="left: 68%; animation-delay: 4s;">🌱</span>
+  <span class="emoji-leaf" style="left: 83%; animation-delay: 2.8s;">🍃</span>
+  <span class="emoji-leaf" style="left: 95%; animation-delay: 1.1s;">🌿</span>
+</div>
+
+<div class="header">
+  <a href="index.html" class="home-link">Home</a>
+  <h1>₊˚ʚ 🌱 ₊˚✧ ﾟ.My Education₊˚ʚ 🌱 ₊˚✧ ﾟ.</h1>
+</div>
+
+<nav>
+  <a href="personalinfo.html">Personal Information</a>
+  <a href="education.html">My Education</a>
+  <a href="hobby.html">My Hobby</a>
+  <a href="myskills.html">My Skills</a>
+  <a href="gallery.html">My Gallery</a>
+  <a href="contact.html">Contact Me</a>
+</nav>
+
+<div class="section">
+  <div class="school-box">
+    <div class="school-img">
+      <img src="sksllogo.jpg" alt="SK Sungai Leman">
+    </div>
+    <div class="school-info">
+      <h3>SK Sungai Leman</h3>
+      <a href="https://sekolahkebangsaansungaileman.blogspot.com/p/logo-sksl.html" target="_blank">Laman Web Sekolah</a>
+      <p>2012–2017</p>
+    </div>
+  </div>
+
+  <div class="school-box">
+    <div class="school-img">
+      <img src="sdm.jpg" alt="SMK Dato' Mustaffa">
+    </div>
+    <div class="school-info">
+      <h3>SMK Dato’ Mustaffa</h3>
+      <a href="https://www.mdsb.gov.my/index.php/en/visitors/education/schools/secondary-school/sekolah-menengah-kebangsaan-dato-mustaffa" target="_blank">Laman Web Sekolah</a>
+      <p>2018–2022</p>
+    </div>
+  </div>
+
+  <div class="school-box">
+    <div class="school-img">
+      <img src="uitmlogo.jpg" alt="UiTM Kedah">
+    </div>
+    <div class="school-info">
+      <h3>UiTM Kedah</h3>
+      <a href="https://kedah.uitm.edu.my/" target="_blank">Laman Web UiTM Kedah</a>
+      <p>2023–Sekarang</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  &copy; 2025 Nazifa 💚
+</div>
+
+</body>
+</html>

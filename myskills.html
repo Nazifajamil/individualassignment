@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Skills – Nazifa</title>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f2fdf3;
+      font-family: 'Segoe UI', sans-serif;
+      color: #1b3c2e;
+      margin: 0;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .emoji-leaf {
+      position: absolute;
+      font-size: 24px;
+      opacity: 0.6;
+      animation: floatSpin 10s infinite linear;
+    }
+
+    @keyframes floatSpin {
+      0% {
+        transform: translateY(-100px) translateX(0) rotate(0deg);
+      }
+      100% {
+        transform: translateY(110vh) translateX(20px) rotate(360deg);
+      }
+    }
+
+    .header {
+      background-color: #3fa173;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .home-link {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #1b3c2e;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    nav {
+      background-color: #cfeadc;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #1b3c2e;
+      font-weight: bold;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #2e6b4e;
+    }
+
+    .skills-container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .skill-column {
+      width: 48%;
+    }
+
+    .skill-title {
+      font-size: 1.4em;
+      border-bottom: 2px solid #3fa173;
+      margin-bottom: 20px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      height: 180px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(4px);
+      transition: filter 0.5s ease;
+    }
+
+    .card:hover img {
+      filter: blur(0px);
+    }
+
+    .card-text {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+      font-weight: bold;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background-color: rgba(27, 60, 46, 0.5);
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .card:hover .card-text {
+      opacity: 0;
+    }
+
+    .footer {
+      background-color: #1b3c2e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🌿 Floating Emoji Leaves -->
+<div class="background">
+  <span class="emoji-leaf" style="left: 4%; animation-delay: 0s;">🌿</span>
+  <span class="emoji-leaf" style="left: 14%; animation-delay: 1.1s;">🍃</span>
+  <span class="emoji-leaf" style="left: 28%; animation-delay: 2.3s;">🌱</span>
+  <span class="emoji-leaf" style="left: 43%; animation-delay: 0.6s;">🍃</span>
+  <span class="emoji-leaf" style="left: 58%; animation-delay: 3.2s;">🌿</span>
+  <span class="emoji-leaf" style="left: 70%; animation-delay: 1.8s;">🌱</span>
+  <span class="emoji-leaf" style="left: 85%; animation-delay: 2.7s;">🍃</span>
+  <span class="emoji-leaf" style="left: 96%; animation-delay: 0.9s;">🌿</span>
+</div>
+
+<div class="header">
+  <a href="index.html" class="home-link">Home</a>
+  <h1>₊˚ʚ 🌱 ₊˚✧ ﾟ.My Skills₊˚ʚ 🌱 ₊˚✧ ﾟ.</h1>
+</div>
+
+<nav>
+  <a href="personalinfo.html">Personal Information</a>
+  <a href="education.html">My Education</a>
+  <a href="hobby.html">My Hobby</a>
+  <a href="myskills.html">My Skills</a>
+  <a href="gallery.html">My Gallery</a>
+  <a href="contact.html">Contact Me</a>
+</nav>
+
+<div class="skills-container">
+  <div class="skill-column">
+    <h2 class="skill-title">Soft Skills</h2>
+
+    <div class="card">
+      <img src="commskills.jpg" alt="Communication">
+      <div class="card-text">🗣️ COMMUNICATION SKILLS</div>
+    </div>
+
+    <div class="card">
+      <img src="probs.jpg" alt="Problem Solving">
+      <div class="card-text">🧠 PROBLEM SOLVING</div>
+    </div>
+
+    <div class="card">
+      <img src="time.jpg" alt="Time Management">
+      <div class="card-text">⏱️ TIME MANAGEMENT</div>
+    </div>
+  </div>
+
+  <div class="skill-column">
+    <h2 class="skill-title">Technical Skills</h2>
+
+    <div class="card">
+      <img src="iml.jpg" alt="HTML & CSS">
+      <div class="card-text">💻 HTML, CSS & JAVA</div>
+    </div>
+
+    <div class="card">
+      <img src="pear.jpg" alt="Adobe Illustrator">
+      <div class="card-text">🎨 ADOBE ILLUSTRATOR</div>
+    </div>
+
+    <div class="card">
+      <img src="images/github.jpg" alt="Photoshop">
+      <div class="card-text">🖌️ PHOTOSHOP</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  &copy; 2025 Nazifa 🌿
+</div>
+
+</body>
+</html>
+
+
